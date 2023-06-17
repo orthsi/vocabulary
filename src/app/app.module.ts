@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { WordCardComponent } from './word-card/word-card.component';
 import { LearningPageComponent } from './learning-page/learning-page.component';
+import { CardTextComponent } from './word-card/card-text/card-text.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     WordCardComponent,
-    LearningPageComponent
+    LearningPageComponent,
+    CardTextComponent
   ],
   imports: [
     BrowserModule,
