@@ -1,0 +1,10 @@
+<div class="card-container" (click)="flipCard()">
+  <div class="card" [class.flip]="flipped">
+    <div class="card-front">
+      <app-card-text [text]="originalText"></app-card-text>
+    </div>
+    <div class="card-back">
+      <app-card-text [text]="translationText"></app-card-text>
+    </div>
+  </div>
+</div>

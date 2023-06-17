@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LearningPageComponent } from './learning-page/learning-page.component';
+import { LearningPageComponent } from './pages/learning-page/learning-page.component';
 
 const routes: Routes = [
   { path: 'learn', component: LearningPageComponent },
