@@ -1,10 +1,17 @@
-<div class="card-container" (click)="flipCard()">
+<div
+  *ngIf="displayCard"
+  class="card-container"
+  (click)="flipCard()"
+  [@cardAnimator]="activeIndex"
+  (swipeleft)="onSwipeLeft()"
+  (swiperight)="onSwipeRight()"
+>
   <div class="card" [class.flip]="flipped">
     <div class="card-front">
-      <app-card-text [text]="originalText"></app-card-text>
+      <app-card-text [text]="currentWord!.original"></app-card-text>
     </div>
     <div class="card-back">
-      <app-card-text [text]="translationText"></app-card-text>
+      <app-card-text [text]="currentWord!.translation"></app-card-text>
     </div>
   </div>
 </div>
